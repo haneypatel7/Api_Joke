@@ -5,7 +5,7 @@ const url="https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political,ra
 let myfun=()=>
 {
     fetch(url)
-    .then(data=>data.json())
+    .then(data=>data.json()) //here .jaso resturn in object form
     .then(item=>{
         joketext.textContent=`${item.joke}`;
         
